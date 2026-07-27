@@ -1,8 +1,26 @@
 aid: greenwork
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/greenwork.png
 name: Greenwork
-description: 'Greenwork is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Greenwork builds software for the HVAC (heating, ventilation, and air
+  conditioning) industry and is backed by GV (Google Ventures). Its flagship product,
+  Onsite Pro, is a digital pricebook and proposal platform for HVAC distributors and
+  their dealers: it replaces Excel and PDF catalogs with searchable product data,
+  automated AHRI equipment matchups, incentive and rebate application, and one-click
+  proposal generation, while giving distributors visibility into dealer catalog performance,
+  win rates, and share of wallet. Greenwork does not currently publish a public developer
+  API, SDKs, or API documentation; this profile captures the company identity and
+  its public web and security posture for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/greenwork/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- HVAC
+- Distribution
+- Pricebook
+- Proposals
+- Contractor Software
+- Field Service
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +49,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://joingreenwork.com
+  url: https://joingreenwork.com
+- type: TermsOfService
+  url: https://www.joingreenwork.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.joingreenwork.com/privacy-policy
+- type: Support
+  url: mailto:help@joingreenwork.com
+- type: Login
+  url: https://www.onsitepro.co/dashboard
+- type: DomainSecurity
+  url: security/greenwork-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/greenwork-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.joingreenwork.com/security
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
